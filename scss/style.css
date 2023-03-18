@@ -1,0 +1,276 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(55, 221, 208);
+  background: linear-gradient(90deg, rgb(55, 221, 208) 0%, rgb(58, 112, 236) 100%);
+  background-repeat: no-repeat;
+  font-family: "Encode Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.4392156863);
+  position: sticky;
+  width: 100%;
+  top: 0%;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 999999;
+  align-items: center;
+}
+
+.logo {
+  padding: 1rem;
+  width: 30%;
+}
+
+.navBar {
+  width: 70%;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li {
+  display: inline-block;
+  padding: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+nav li:hover {
+  color: aliceblue;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: rgba(255, 255, 255, 0.4392156863);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5rem;
+  margin: 2rem 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+.hero div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  line-height: 2rem;
+  width: 100%;
+}
+.hero div h2 {
+  font-size: 2rem;
+}
+.hero div p {
+  line-height: 1.5rem;
+  color: #000;
+}
+.hero div img {
+  width: 100%;
+}
+.hero div .btns {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.hero div .btns button {
+  outline: none;
+  border: none;
+  background: rgb(58, 112, 236);
+  color: #fff;
+  padding: 0.7rem 2rem;
+  border-radius: 0.2rem;
+}
+.hero div .btns button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.midSection {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
+  padding-bottom: 3rem;
+}
+.midSection .midHeading {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.midSection .midHeading a {
+  text-decoration: none;
+  color: #fff;
+  font-size: larger;
+}
+.midSection .midHeading a:hover {
+  color: #000;
+}
+.midSection .typeOfOrange {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.midSection .typeOfOrange img {
+  margin: 2rem;
+  width: 200px;
+}
+.midSection .typeOfOrange div {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.4392156863);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 0.5rem;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  max-width: 45%;
+}
+.midSection .typeOfOrange .aboutFruit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 2rem;
+}
+.midSection .typeOfOrange .aboutFruit a {
+  text-decoration: none;
+  color: rgb(58, 112, 236);
+  font-weight: bolder;
+}
+.midSection .typeOfOrange .aboutFruit a:hover {
+  color: #0a0a0a;
+}
+.midSection .typeOfOrange .aboutFruit a:hover::after {
+  content: " !";
+}
+
+.about {
+  background-image: url(https://img.freepik.com/free-vector/citrus-fruits-slices-realistic-closeup-set-with-lemon-lime-grapefruit-orange-shadow-reflection-white-vector-illustration_1284-67431.jpg?size=626&ext=jpg&ga=GA1.2.569660614.1672315885&semt=ais);
+  background-repeat: round;
+  padding: 5rem;
+}
+.about div {
+  position: relative;
+  top: 8rem;
+  text-align: center;
+  padding: 3rem;
+}
+.about div p {
+  background-color: #fff;
+  margin-top: 0.8rem;
+  line-height: 1.4rem;
+  padding-bottom: 0.6rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer img {
+  width: 70%;
+  padding: 2rem;
+  border-radius: 50%;
+}
+.footer .footerData {
+  line-height: 3rem;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2392156863);
+  padding: 4rem;
+}
+.footer .footerData i {
+  font-size: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 425px) {
+  .container,
+  .hero,
+  .midHeading {
+    flex-direction: column;
+    width: 100%;
+  }
+  .container img,
+  .hero img,
+  .midHeading img {
+    width: 100%;
+  }
+  .container {
+    display: none;
+  }
+  .hero {
+    margin: 0;
+  }
+  .about {
+    padding: 0;
+  }
+  .about > div {
+    padding: 1rem;
+    position: static;
+  }
+  .footer img {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .typeOfOrange div {
+    justify-content: center;
+    padding-bottom: 1rem;
+    max-width: 100% !important;
+  }
+  .typeOfOrange div .aboutFruit {
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .container,
+  .hero,
+  .midHeading {
+    flex-direction: column;
+    width: 100%;
+  }
+  .container img,
+  .hero img,
+  .midHeading img {
+    width: 100%;
+  }
+  .container {
+    display: none;
+  }
+  .hero {
+    margin: 0;
+  }
+  .about {
+    padding: 0;
+  }
+  .about > div {
+    padding: 1rem;
+    position: static;
+  }
+  .footer img {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .typeOfOrange div {
+    justify-content: center;
+    padding-bottom: 1rem;
+    max-width: 100% !important;
+  }
+  .typeOfOrange div .aboutFruit {
+    padding: 0.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */

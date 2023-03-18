@@ -1,0 +1,197 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  //   border: 1px solid red;
+}
+$color1: rgba(55, 221, 208, 1);
+$color2: rgba(58, 112, 236, 1);
+
+body {
+  background: rgb(55, 221, 208);
+  background: linear-gradient(90deg, $color1 0%, $color2 100%);
+  background-repeat: no-repeat;
+  font-family: "Encode Sans", sans-serif;
+}
+.container {
+  display: flex;
+  background-color: #ffffff70;
+  position: sticky;
+  width: 100%;
+  top: 0%;
+  backdrop-filter: blur(5px);
+  z-index: 999999;
+  align-items: center;
+}
+.logo {
+  padding: 1rem;
+  width: 30%;
+}
+.navBar {
+  width: 70%;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  li {
+    display: inline-block;
+    padding: 2rem;
+
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    &:hover {
+      color: aliceblue;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+}
+.hero {
+  background-color: #ffffff70;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5rem;
+  margin: 2rem 2rem;
+  padding: 2rem;
+  align-items: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    line-height: 2rem;
+    width: 100%;
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      line-height: 1.5rem;
+      color: #000;
+    }
+    img {
+      width: 100%;
+    }
+    .btns {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      button {
+        outline: none;
+        border: none;
+        background: $color2;
+        color: #fff;
+        padding: 0.7rem 2rem;
+        border-radius: 0.2rem;
+        &:hover {
+          opacity: 0.8;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.midSection {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
+  padding-bottom: 3rem;
+
+  .midHeading {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: larger;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+  .typeOfOrange {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    img {
+      margin: 2rem;
+      width: 200px;
+    }
+    div {
+      display: flex;
+      background-color: #ffffff70;
+      backdrop-filter: blur(5px);
+      border-radius: 0.5rem;
+      flex-wrap: wrap;
+	  flex-grow: 1;
+	  max-width: 45%;
+    }
+    .aboutFruit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      line-height: 2rem;
+      a {
+        text-decoration: none;
+        color: $color2;
+        font-weight: bolder;
+        &:hover {
+          color: #0a0a0a;
+          &::after {
+            content: " !";
+          }
+        }
+      }
+    }
+  }
+}
+.about {
+  background-image: url(https://img.freepik.com/free-vector/citrus-fruits-slices-realistic-closeup-set-with-lemon-lime-grapefruit-orange-shadow-reflection-white-vector-illustration_1284-67431.jpg?size=626&ext=jpg&ga=GA1.2.569660614.1672315885&semt=ais);
+  background-repeat: round;
+  //   position: absolute;
+  padding: 5rem;
+
+  div {
+    position: relative;
+    top: 8rem;
+    text-align: center;
+
+    padding: 3rem;
+    p {
+      background-color: #fff;
+      margin-top: 0.8rem;
+      line-height: 1.4rem;
+      padding-bottom: 0.6rem;
+    }
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  img {
+    width: 70%;
+    padding: 2rem;
+    border-radius: 50%;
+  }
+  .footerData {
+    line-height: 3rem;
+    letter-spacing: 0.2rem;
+    color: #fff;
+    background-color: #ffffff3d;
+    padding: 4rem;
+  }
+  .footerData i {
+    font-size: 2rem;
+    padding-right: 2rem;
+  }
+}

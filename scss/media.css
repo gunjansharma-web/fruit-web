@@ -1,0 +1,78 @@
+@media (max-width: 425px) {
+  .container,
+  .hero,
+  .midHeading {
+    flex-direction: column;
+    width: 100%;
+  }
+  .container img,
+  .hero img,
+  .midHeading img {
+    width: 100%;
+  }
+  .container {
+    display: none;
+  }
+  .hero {
+    margin: 0;
+  }
+  .about {
+    padding: 0;
+  }
+  .about > div {
+    padding: 1rem;
+    position: static;
+  }
+  .footer img {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .typeOfOrange div {
+    justify-content: center;
+    padding-bottom: 1rem;
+    max-width: 100% !important;
+  }
+  .typeOfOrange div .aboutFruit {
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .container,
+  .hero,
+  .midHeading {
+    flex-direction: column;
+    width: 100%;
+  }
+  .container img,
+  .hero img,
+  .midHeading img {
+    width: 100%;
+  }
+  .container {
+    display: none;
+  }
+  .hero {
+    margin: 0;
+  }
+  .about {
+    padding: 0;
+  }
+  .about > div {
+    padding: 1rem;
+    position: static;
+  }
+  .footer img {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .typeOfOrange div {
+    justify-content: center;
+    padding-bottom: 1rem;
+    max-width: 100% !important;
+  }
+  .typeOfOrange div .aboutFruit {
+    padding: 0.5rem;
+  }
+}/*# sourceMappingURL=media.css.map */
