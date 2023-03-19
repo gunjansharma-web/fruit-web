@@ -11,6 +11,15 @@ body {
   font-family: "Encode Sans", sans-serif;
 }
 
+#ham {
+  font-size: larger;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+#ham:hover {
+  color: #ffffff;
+}
+
 .container {
   display: flex;
   background-color: rgba(255, 255, 255, 0.4392156863);
@@ -47,6 +56,10 @@ nav li:hover {
   color: aliceblue;
   cursor: pointer;
   font-weight: bold;
+}
+
+.bi-list {
+  display: none;
 }
 
 .hero {
@@ -149,7 +162,7 @@ nav li:hover {
   font-weight: bolder;
 }
 .midSection .typeOfOrange .aboutFruit a:hover {
-  color: #0a0a0a;
+  color: #ff7301;
 }
 .midSection .typeOfOrange .aboutFruit a:hover::after {
   content: " !";
@@ -208,8 +221,20 @@ nav li:hover {
   .midHeading img {
     width: 100%;
   }
-  .container {
-    display: none;
+  nav ul li {
+    padding: 1rem 2rem;
+    line-height: 1rem;
+  }
+  .logo {
+    width: 50%;
+  }
+  .navBar {
+    width: 50%;
+  }
+  .bi-list {
+    display: block;
+    width: 2rem;
+    height: 2rem;
   }
   .hero {
     margin: 0;
@@ -236,18 +261,16 @@ nav li:hover {
   }
 }
 @media (max-width: 768px) {
-  .container,
   .hero,
   .midHeading {
     flex-direction: column;
     width: 100%;
   }
-  .container img,
   .hero img,
   .midHeading img {
     width: 100%;
   }
-  .container {
+  .hideOrShow {
     display: none;
   }
   .hero {
@@ -272,5 +295,10 @@ nav li:hover {
   }
   .typeOfOrange div .aboutFruit {
     padding: 0.5rem;
+  }
+  .bi-list {
+    display: block;
+    width: 2rem;
+    height: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -11,6 +11,15 @@ body {
   font-family: "Encode Sans", sans-serif;
 }
 
+#ham {
+  font-size: larger;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+#ham:hover {
+  color: #ffffff;
+}
+
 .container {
   display: flex;
   background-color: rgba(255, 255, 255, 0.4392156863);
@@ -47,6 +56,10 @@ nav li:hover {
   color: aliceblue;
   cursor: pointer;
   font-weight: bold;
+}
+
+.bi-list {
+  display: none;
 }
 
 .hero {
@@ -149,7 +162,7 @@ nav li:hover {
   font-weight: bolder;
 }
 .midSection .typeOfOrange .aboutFruit a:hover {
-  color: #0a0a0a;
+  color: #ff7301;
 }
 .midSection .typeOfOrange .aboutFruit a:hover::after {
   content: " !";

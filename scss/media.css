@@ -10,8 +10,20 @@
   .midHeading img {
     width: 100%;
   }
-  .container {
-    display: none;
+  nav ul li {
+    padding: 1rem 2rem;
+    line-height: 1rem;
+  }
+  .logo {
+    width: 50%;
+  }
+  .navBar {
+    width: 50%;
+  }
+  .bi-list {
+    display: block;
+    width: 2rem;
+    height: 2rem;
   }
   .hero {
     margin: 0;
@@ -38,18 +50,16 @@
   }
 }
 @media (max-width: 768px) {
-  .container,
   .hero,
   .midHeading {
     flex-direction: column;
     width: 100%;
   }
-  .container img,
   .hero img,
   .midHeading img {
     width: 100%;
   }
-  .container {
+  .hideOrShow {
     display: none;
   }
   .hero {
@@ -74,5 +84,10 @@
   }
   .typeOfOrange div .aboutFruit {
     padding: 0.5rem;
+  }
+  .bi-list {
+    display: block;
+    width: 2rem;
+    height: 2rem;
   }
 }/*# sourceMappingURL=media.css.map */

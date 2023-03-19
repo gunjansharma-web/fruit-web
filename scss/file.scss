@@ -13,6 +13,13 @@ body {
   background-repeat: no-repeat;
   font-family: "Encode Sans", sans-serif;
 }
+#ham{
+  font-size: larger;
+  margin:.5rem;
+font-weight: bold;
+&:hover{
+  color:#ffffff
+}}
 .container {
   display: flex;
   background-color: #ffffff70;
@@ -46,6 +53,9 @@ nav {
       font-weight: bold;
     }
   }
+}
+.bi-list {
+  display: none;
 }
 .hero {
   background-color: #ffffff70;
@@ -129,8 +139,8 @@ nav {
       backdrop-filter: blur(5px);
       border-radius: 0.5rem;
       flex-wrap: wrap;
-	  flex-grow: 1;
-	  max-width: 45%;
+      flex-grow: 1;
+      max-width: 45%;
     }
     .aboutFruit {
       display: flex;
@@ -143,7 +153,7 @@ nav {
         color: $color2;
         font-weight: bolder;
         &:hover {
-          color: #0a0a0a;
+          color: #ff7301;
           &::after {
             content: " !";
           }
